@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".MainActivity">
+
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_android_black_24dp"/>
+
+        <EditText
+            style="@style/editStyle"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/et_name"
+            android:hint="Full Name"
+            android:inputType="textPersonName"/>
+
+        <EditText
+            style="@style/editStyle"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/et_email"
+            android:hint="Email"
+            android:inputType="textEmailAddress"/>
+
+        <EditText
+            style="@style/editStyle"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/et_password"
+            android:hint="Password"
+            android:inputType="textPassword"/>
+
+        <TextView
+            style="@style/editStyle"
+            android:id="@+id/editStyle1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:text="Choose University"/>
+
+        <Spinner
+            style="@style/editStyle"
+            android:id="@+id/groupSpinner1"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"/>
+
+        <TextView
+            style="@style/editStyle"
+            android:id="@+id/editStyle2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:text="Choose group"/>
+
+        <Spinner
+            android:id="@+id/groupSpinner2"
+            style="@style/editStyle"
+            android:layout_width="match_parent"
+            android:layout_height="40dp" />
+
+        <TextView
+            style="@style/editStyle"
+            android:id="@+id/editStyle3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:text="Choose City"/>
+
+        <Spinner
+            style="@style/editStyle"
+            android:id="@+id/groupSpinner3"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                style="@style/editStyle"
+                android:id="@+id/editStyle5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:text="Do you live in Dormitory"
+                android:layout_gravity="center"/>
+
+            <CheckBox
+                android:id="@+id/checbox1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Yes"
+                android:onClick="onCheckboxClicked"/>
+        </LinearLayout>
+
+        <TextView
+            style="@style/editStyle"
+            android:id="@+id/editStyle4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:text="Choose Room"/>
+
+        <Spinner
+            style="@style/editStyle"
+            android:id="@+id/groupSpinner4"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="Create Account"
+            android:id="@+id/btnCreateAccount"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/colorAccent"
+            android:ems="10"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="Login"
+            android:id="@+id/btnLogin"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/colorPrimary"
+            android:ems="10"/>
+
+
+        <!--    <Switch-->
+        <!--        android:id="@+id/sw_active"-->
+        <!--        android:layout_width="wrap_content"-->
+        <!--        android:layout_height="wrap_content"-->
+        <!--        android:layout_marginStart="8dp"-->
+        <!--        android:layout_marginTop="8dp"-->
+        <!--        android:layout_marginEnd="8dp"-->
+        <!--        android:text="@string/ActiveCustomer"-->
+        <!--        app:layout_constraintEnd_toEndOf="parent"-->
+        <!--        app:layout_constraintStart_toStartOf="parent"-->
+        <!--        app:layout_constraintTop_toBottomOf="@+id/et_age" />-->
+
+        <!--    <ListView-->
+        <!--        android:id="@+id/lv_customerList"-->
+        <!--        android:layout_width="match_parent"-->
+        <!--        android:layout_height="match_parent"-->
+        <!--        app:layout_constraintEnd_toEndOf="parent"-->
+        <!--        app:layout_constraintHorizontal_bias="0.0"-->
+        <!--        app:layout_constraintStart_toStartOf="parent"-->
+        <!--        app:layout_constraintTop_toBottomOf="@+id/btn_viewAll" />-->
+
+    </LinearLayout>
+</ScrollView>
